@@ -9,7 +9,7 @@ input_dim: 128
 layer {
   name: "conv1_1"
   type: "Convolution"
-  bottom: "img"
+  bottom: "data"
   top: "conv1_1"
   param {
     lr_mult: 1
@@ -908,8 +908,8 @@ layer {
 layer {
     name: 'crop5'
     type: 'Crop'
-	bottom: 'score'
-    bottom: 'mask'   
+    bottom: 'score'
+    bottom: 'data'   
     top: 'crop5'
     crop_param {
     axis: 2
