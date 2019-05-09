@@ -913,7 +913,8 @@ layer {
     top: 'crop5'
     crop_param {
     axis: 2
-
+    offset: 15
+    offset: 15
   }
 }
 
