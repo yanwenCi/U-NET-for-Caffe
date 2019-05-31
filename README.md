@@ -19,5 +19,5 @@ U-Net with upsampling layer under caffe
    I always have trouble in training deconvolution layer.
    the deconvolution layer is replaced by upsampling layer + convolution layer with 2*2 kernel, which is as same structure as unet in keras.
 5. you should modify the parameter offset in crop layer to make sure the bottom0 blob is cropped in center.
-   the offsite=(bottom0-bottom1)/2, note that bottom is the one to be cropped and it is larger.
+   the offsite=(bottom0-bottom1)/2, note that bottom0 is the one to be cropped and it is larger.
 6. you can try your own data now!
