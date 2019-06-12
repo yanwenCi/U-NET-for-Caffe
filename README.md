@@ -9,10 +9,13 @@ U-Net with upsampling layer under caffe
    optional UpsampleParameter upsample_param = 152;
   
    add a line after  message LayerParameter {}
+   
    // message for upsample parameter 
+   
    message UpsampleParameter {
    optional int32 scale = 1 [default = 1];
    }
+   
 3. re-build the source code of caffe in vs.
    if you use python interference, don't forget copy the released file in \Build\x64\Release\pycaffe\caffe to site-packages of python      path.
 4. I modified the prototxt file of unet network with deconvolution layer, because its params are difficult to initialize.
